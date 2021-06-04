@@ -3,17 +3,11 @@ label: link post
 hide_body: false
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
   name: title
   label: title
 - type: datetime
   name: date
   label: date
-- type: list
-  name: categories
-  label: categories
 - type: file
   name: image
   label: image
