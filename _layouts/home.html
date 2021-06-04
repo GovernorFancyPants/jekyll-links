@@ -18,7 +18,7 @@ layout: default
           <div class="post-container">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <div class="post-img-container">
-              <img src="{{ site.url }}{{ post.image }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+              <img src="http://images.weserv.nl/?url={{ site.url }}{{ post.image }}&w=800&h=800&output=jpg&q=65" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
               <div class="img-overlay">
                 <span>{{ post.title }}</span>
               </div>
