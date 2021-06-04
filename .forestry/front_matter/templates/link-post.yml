@@ -14,5 +14,3 @@ fields:
 - type: text
   name: linkurl
   label: linkurl
-pages:
-- _posts/2021-06-03-test.md
