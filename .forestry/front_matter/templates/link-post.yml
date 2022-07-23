@@ -15,6 +15,7 @@ fields:
   name: linkurl
   label: linkurl
 pages:
+- _posts/13-peaks-of-sweden.md
 - _posts/2021-06-14-hastko.md
 - _posts/2021-09-19-tour-du-matterhorn.md
 - _posts/mcc-tracking.md
