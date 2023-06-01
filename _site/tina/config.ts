@@ -39,77 +39,23 @@ export default defineConfig({
             isTitle: true,
             required: true,
           },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
           { 
             type: "datetime",
             name: "date",
             label: "Date",
             required: true,
           },
-          {
-            type: 'string',
-            name: 'tags',
-            label: 'Tags',
-            list: true,
-            ui: {
-              component: 'tags',
-            }
-          },
-          {
-            type: "object",
+          { 
+            type: "image",
             name: "image",
             label: "Cover image",
             required: true,
-            fields: [
-              {
-                type: "image",
-                name: "feature",
-                label: "Feature",
-                required: true,
-              },
-              {
-                type: "image",
-                name: "teaser",
-                label: "Thumbnail",
-                required: true,
-              },
-            ],
-          },
-          { 
-            type: "string",
-            name: "categories",
-            label: "Categories",
-          },
-          { 
-            type: "boolean",
-            name: "ads",
-            label: "Ads",
-          },
-          { 
-            type: "boolean",
-            name: "comments",
-            label: "Comments",
           },
           {
             type: "string",
-            name: "layout",
-            label: "Layout",
+            name: "linkurl",
+            label: "Link URL",
             required: true,
-          },
-          {
-            type: "string",
-            name: "excerpt",
-            label: "Excerpt",
-          },
-          {
-            type: "string",
-            name: "introduction",
-            label: "Introduction",
           },
         ],
       },
