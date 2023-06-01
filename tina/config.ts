@@ -28,7 +28,7 @@ export default defineConfig({
         defaultItem: () => {
           return {
             // When a new post is created the layout field will be set to "article"
-            layout: 'article',
+            layout: 'post',
           }
         },
         fields: [
