@@ -27,9 +27,20 @@ export default defineConfig({
         path: '_posts',
         defaultItem: () => {
           return {
-            // When a new post is created the layout field will be set to "article"
+            // When a new post is created the layout field will be set to "post"
             layout: 'post',
           }
+        },
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: values => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.date?.toString().replace(/T.*$/,"")}-${values?.title?.toLowerCase().replace(/ /g, '-')}`
+            },
+          },
         },
         fields: [
           { 
