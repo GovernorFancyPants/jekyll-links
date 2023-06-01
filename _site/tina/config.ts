@@ -20,6 +20,45 @@ export default defineConfig({
     },
   },
   schema: {
-    collections: [],
+    collections: [
+      {
+        label: 'Blog Posts',
+        name: 'post',
+        path: '_posts',
+        defaultItem: () => {
+          return {
+            // When a new post is created the layout field will be set to "article"
+            layout: 'article',
+          }
+        },
+        fields: [
+          { 
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          { 
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Cover image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "linkurl",
+            label: "Link URL",
+            required: true,
+          },
+        ],
+      },
+    ],
   },
 });
