@@ -2,3 +2,11 @@ _site/
 index.html
 assets/
 node_modules
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+_asset_bundler_cache
+.sass-cache
+.jekyll-metadata
+.ruby-version
